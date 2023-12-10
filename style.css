@@ -1,0 +1,16 @@
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.navbar-brand{
+  padding-left:40px;
+}
+
+
+
+
+/* // Color mode variables in _root.scss
+@include color-mode(dark) {
+  // CSS variable overrides here...
+} */
