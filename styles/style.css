@@ -1,0 +1,56 @@
+body{
+  background-color: rgb(255, 0, 212);
+}
+
+/* .gradient {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/forest.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} */
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(153, 153, 153);
+}
+
+#hero video{
+  margin-top: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .reel-caption{
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.navbar-brand{
+  padding-left:40px;
+}
+
+
+
+
+/* // Color mode variables in _root.scss
+@include color-mode(dark) {
+  // CSS variable overrides here...
+} */
