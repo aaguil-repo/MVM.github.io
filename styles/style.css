@@ -10,6 +10,17 @@ body{
   background-size: cover;
   position: relative;
 } */
+#hero::after{
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+
+}
 
 #hero{
   display: flex;
