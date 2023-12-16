@@ -63,6 +63,8 @@ body {
 }
 
 #about-me h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
   text-align: center;
   font-size: 3em;
   margin-bottom: 5rem;
