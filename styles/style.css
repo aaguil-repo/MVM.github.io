@@ -21,14 +21,7 @@ body {
   justify-content: center;
   height: 50vh;
   width: 100%;
-  background-color: rgb(255, 25, 25);
   margin-bottom: 0px;
-  
-
-  /* width: 100vw;
-  height: 100vh;
-  text-align: center;
-  overflow: hidden; */
 }
 
 /* Reel edit */
@@ -59,15 +52,22 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 3em;
-  margin-bottom: 5rem;
+  margin: 5rem 0 5rem;
 }
 
 #about-me img{
-  float: left;
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+#about-me p {
+  text-align: left;
+}
+
+#about-me-content{
+
 }
 
 hr{
