@@ -11,7 +11,7 @@
   </head>
   <body>
     <!--Navigation (nav-container is mine not bootstrap)-->
-    <div class="nav-container">
+    <header>
       <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- this is the brand image -->
@@ -53,26 +53,46 @@
           </div>
         </div>
       </nav>
-    </div>
-    <!--Video-Reel-->
+    </header>
 
-    <div id="hero">
-      <!-- <video muted loop="loop" style="object-fit: cover; object-position: 50% 50%; width: 100%;"><source src="./Videos/video-reel.mp4" type="video/mp4"></video> -->
-      <video class="" playsinline preload="auto" autoplay loop muted>
-        <source src="./assets/videos/placeholder.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <div class="reel-caption">
-        <h1>Placeholder</h1>
-        <h2>Hi Mac, still working on video sizing</h2>
-      </div>
-    </div>
+    <main>
+      <!--Video-Reel-->
+    <section id="hero">
+        <!-- <video muted loop="loop" style="object-fit: cover; object-position: 50% 50%; width: 100%;"><source src="./Videos/video-reel.mp4" type="video/mp4"></video> -->
+        <video class="" id="reelBackground" preload="auto" autoplay loop muted>
+          <source src="./assets/videos/placeholder.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+  
+        <div class="reel-caption">
+          <h1>Placeholder</h1>
+          <h2>Hi Mac, still working on video sizing</h2>
+        </div>
+    </section>
 
     <!--About-Me-->
     <section id="about-me">
-
-    </section>
+        <div class="container">
+          <!-- START THE FEATURETTES -->
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <img src="./assets/images/placeholder-profile-pic.jpg">
+            </div>
+            <div class="col-md-5">
+              <h2 class="featurette-heading fw-normal lh-1">About My Work <span class="text-body-secondary">and Myself.</span></h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Convallis convallis tellus id interdum velit. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Ullamcorper malesuada proin libero nunc consequat. Sodales ut eu sem integer vitae justo eget magna. Eleifend quam adipiscing vitae proin. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Curabitur vitae nunc sed velit. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Ultricies mi quis hendrerit dolor magna eget est. Auctor augue mauris augue neque gravida in fermentum et. Et netus et malesuada fames. Gravida in fermentum et sollicitudin ac orci phasellus.</p>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <!-- /END THE FEATURETTES -->
+      
+        </div>
+      </section>
     
     <!--Quotes-->
     <section id="quotes">
@@ -83,6 +103,8 @@
     <section id="video-showcase">
 
     </section>
+    </main>
+    
       
     <!--Footer-->
     <section id="footer">
