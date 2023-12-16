@@ -6,13 +6,20 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-brand{
+  
+}
+
+.navbar-collapse{
+  text-align: left;
+}
+
 .navbar-nav > li{
   padding-left:20px;
   padding-right:20px;
 }
 
 .navbar-brand{
-  padding-left:40px;
 }
 
 /* Container for Video Reel */
