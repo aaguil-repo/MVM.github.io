@@ -80,6 +80,14 @@ body {
 
 }
 
+#quotes{
+}
+
+#quote-icon{
+  transform: scale(5);
+  margin: 5rem 0 5rem;
+}
+
 hr{
   border: dotted #496150 5px;
   border-bottom: none;
