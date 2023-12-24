@@ -88,6 +88,17 @@ body {
   margin: 5rem 0 5rem;
 }
 
+.quote{
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 50%;
+}
+
+.quoteAuthor{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 hr{
   border: dotted #496150 5px;
   border-bottom: none;
