@@ -81,6 +81,8 @@ body {
 }
 
 #quotes{
+  height: 35vh;
+  margin: auto;
 }
 
 #quote-icon{
