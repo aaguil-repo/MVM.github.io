@@ -86,85 +86,119 @@
     </div>
     
     <!--Quotes-->
-    <div class="container" id="quotes">
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-quote" id="quote-icon" viewBox="0 0 16 16">
-        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-        <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-      </svg>
+    <section class="quotes gradient-custom rounded">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col col-xl-10">
+            <div class="card">
+              <div class="card-body">
+                <!-- Experimental Quotes Slideshow -->
+                
+                <div id="quotes-carousel" class="carousel slide" data-bs-ride="carousel">
 
-      <!-- Experimental Quotes Slideshow -->
-      <div class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <q class="quote">I ask a lot of our Media position for the event. Malcolm blew me away with the quality of work he was able to produce in the restricted environment he was given to work…</q>
-            <p class="quoteAuthor">Ashley Schneider | President & Founder, MSruntheUS, INC</p>
-          </div>
-          <div class="carousel-item">
-            <q class="quote">Responsible, Enthusiastic, and incredibly hard working, Malcolm was among the best here at Camp Widji and I strongly endorse his qualifications and skillset</q>
-            <p class="quoteAuthor">Jay Burnett | Marketing Director, YMCA Camp Widjiwagan</p>
-          </div>
-          <div class="carousel-item">
-            <q class="quote">As the camp photographer/videographer, he consistently went above and beyond, capturing and preserving unforgettable moments with creativity and precision. Aside from his remarkable work ethic, Malcolm has a cinematic eye that will turn the most mundane moments into art.</q>
-            <p class="quoteAuthor">Aaron Grayson | Creative Manager & Photographer</p>
-          </div>
-          <div class="carousel-item">
-            <q class="quote">An invaluable asset to any creative team, seamlessly blends artistic vision with technical prowess…He masterfully navigates the world of videography and post-production, delivering stunning visual narratives that resonate.</q>
-            <p class="quoteAuthor">Matt Walker | Photographer, Exxel Outdoors</p>
-          </div>
-          <div class="carousel-item">
-            <q class="quote">Malcom is very easy to work with, he always have a good attitude, a good smile, he is always on time and carries himself very professionaly! He is a dedicated volunteer at our church production team! I highly recommend working with him!</q>
-            <p class="quoteAuthor">Bruno Cardoso 
-              // Vintage City Church // 
-              Broadcast Lead</p>
+                  <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div> -->
+              
+                  <div class="carousel-inner">
+                    <figure class="text-center carousel-item active">
+                      <blockquote class="blockquote">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>I ask a lot of our Media position for the event. Malcolm blew me away with the quality of work he was able to produce in the restricted environment he was given to work…</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Ashley Schneider <cite title="Source Title">President & Founder, MSruntheUS, INC</cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-center carousel-item">
+                      <blockquote class="blockquote">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>Responsible, Enthusiastic, and incredibly hard working, Malcolm was among the best here at Camp Widji and I strongly endorse his qualifications and skillset</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Jay Burnett <cite title="Source Title">Marketing Director, YMCA Camp Widjiwagan</cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-center carousel-item">
+                      <blockquote class="blockquote">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>As the camp photographer/videographer, he consistently went above and beyond, capturing and preserving unforgettable moments with creativity and precision. Aside from his remarkable work ethic, Malcolm has a cinematic eye that will turn the most mundane moments into art.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Aaron Grayson <cite title="Source Title">Creative Manager & Photographer</cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-center carousel-item">
+                      <blockquote class="blockquote">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>An invaluable asset to any creative team, seamlessly blends artistic vision with technical prowess…He masterfully navigates the world of videography and post-production, delivering stunning visual narratives that resonate.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Matt Walker <cite title="Source Title">Photographer, Exxel Outdoors</cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-center carousel-item">
+                      <blockquote class="blockquote">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>Malcom is very easy to work with, he always have a good attitude, a good smile, he is always on time and carries himself very professionaly! He is a dedicated volunteer at our church production team! I highly recommend working with him!</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Bruno Cardoso <cite title="Source Title">Vintage City Church // Broadcast Lead</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#quotes-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#quotes-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button> -->
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- V2 -->
-      
-
-
-      <!-- <div class="row d-flex align-items-start">
-        <div class="col">
-          <p class="quoteParagraph">“I ask a lot of our Media position for the event. Malcolm blew me away with the quality of work he was able to produce in the restricted environment he was given to work…”</p>
-          <p class="quoteAuthor">Ashley Schneider | President & Founder, MSruntheUS, INC</p>
-        </div>
-
-        <div class="col">
-          <p class="quoteParagraph">“Responsible, Enthusiastic, and incredibly hard working, Malcolm was among the best here at Camp Widji and I strongly endorse his qualifications and skillset”</p>
-          <p class="quoteAuthor">Jay Burnett | Marketing Director, YMCA Camp Widjiwagan</p>
-        </div>
-          
-        <div class="col">
-          <p class="quoteParagraph">“As the camp photographer/videographer, he consistently went above and beyond, capturing and preserving unforgettable moments with creativity and precision. Aside from his remarkable work ethic, Malcolm has a cinematic eye that will turn the most mundane moments into art.”</p>
-          <p class="quoteAuthor">Aaron Grayson | Creative Manager & Photographer</p>
-        </div>
-
-        <div class="col">
-          <p class="quoteParagraph">“An invaluable asset to any creative team, seamlessly blends artistic vision with technical prowess…He masterfully navigates the world of videography and post-production, delivering stunning visual narratives that resonate."</p>
-          <p class="quoteAuthor">Matt Walker | Photographer, Exxel Outdoors</p>
-        </div>
-
-        <div class="col">
-          <p class="quoteParagraph">“Malcom is very easy to work with, he always have a good attitude, a good smile, he is always on time and carries himself very professionaly! He is a dedicated volunteer at our church production team! I highly recommend working with him!"</p>
-          <p class="quoteAuthor">Bruno Cardoso 
-            // Vintage City Church // 
-            Broadcast Lead
-            </p>
-        </div>
-      </div> -->
-    </div>
+    </section>
 
     <!--Video-Showcase-->
-    <div id="video-showcase">
+    <div class="container" id="video-showcase">
+      
       <h2>Recent Work</h2>
-
-      <script>
-        
-
-      </script>
-
+        <div class="row">
+          <div class="col-lg-4">
+            <video preload="auto">
+              <source  src="./assets/videos/placeholder.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-4">
+            <video preload="auto">
+              <source src="./assets/videos/placeholder.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-4">
+            <video preload="auto">
+              <source src="./assets/videos/placeholder.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
     </div>
     </main>
     
