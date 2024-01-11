@@ -82,13 +82,13 @@ body {
 }
 
 .blockquote {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 50px;
 }
 
 .blockquote-footer {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
 }
 
@@ -130,5 +130,5 @@ body {
 }
 
 .carousel-item {
-  height: 350px;
+  height: 250px;
 }
