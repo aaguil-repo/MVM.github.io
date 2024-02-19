@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>MVM</title>
+      <title>MVM - Home</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="./assets/branding/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/branding/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/branding/favicons/favicon-16x16.png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
       <link href="./styles/style.css" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-      <!-- <script src="./js/darkmode.js"></script> -->
-
+      <link href="./styles/home.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   </head>
   <body>
-    <!--Navigation (nav-container is mine not bootstrap)-->
+    <!--Navigation-->
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary ">
+      <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
           <!-- this is the brand image -->
-          <a class="navbar-brand" href="index.html"><img src="./assets/branding/Brand-PNG.png" height="40px"></a>
+          <a class="navbar-brand" href="index.html"><img src="./assets/branding/mini-branding.png" height="30px"></a>
           <!-- this is the nav button when switching to mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Tabs -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse mt-5 mt-lg-0" id="navbarSupportedContent">
             <!-- Pages -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+              <li class="nav-item"><a class="nav-link active bold" aria-current="page" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
               <li class="nav-item"><a class="nav-link" href="series-projects.html">Series Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <!-- Socials -->
             <ul class="nav justify-content-center">
@@ -45,13 +45,10 @@
                 </svg></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://calendly.com/malcomvmedia/nitty-gritty-follow-up-meeting-production-post-production"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 text-dark" viewBox="0 0 16 16">
+                <a class="nav-link animate__animated animate__tada" href="https://calendly.com/malcomvmedia/nitty-gritty-follow-up-meeting-production-post-production"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 text-dark" viewBox="0 0 16 16">
                   <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
                   <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                 </svg></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
               </li>
             </ul>
           </div>
@@ -61,189 +58,277 @@
 
     <main>
       <!--Video-Reel-->
-    <section id="hero" class="reel">
-        <div class="container">
-          <!-- <video muted loop="loop" style="object-fit: cover; object-position: 50% 50%; width: 100%;"><source src="./Videos/video-reel.mp4" type="video/mp4"></video> -->
-          <video class="" id="reelBackground" preload="auto" autoplay loop muted>
-            <source src="./assets/videos/placeholder.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+      <section id="hero">
+        <div class="container reel-div">
+          <video poster="./assets/videos/reel/Reel-00.00.00.000.png" preload="auto" playsinline autoplay loop muted id="reel">
+            <source src="./assets/videos/reel/Reel.mp4" type="video/mp4">
           </video>
-    
-          <div class="reel-caption">
-            <h1>Placeholder</h1>
-            <h2>Hi Mac, still working on video sizing</h2>
-          </div>
         </div>
-    </section>
 
-    <!--About-Me-->
-    <div class="container" id="about-me">
-      <h2 class="featurette-heading fw-normal lh-1">About Myself</h2>
-      <div class="row" id="about-me-content">
-        <div class="col-lg-6"><img src="./assets/images/profilePic.jpg"></div>
-        <div class="col-lg-6"><p class="lead">With over 4 years of Film Production experience I provide cinematic solutions to shorts, feature films, action sports, & documentaries of health & wellness journey’s. Additionally, I am highly skilled in both traditional and modern photography. Outdoor enthusiast, lactose intolerant diary lover, faith driven, and family oriented. Hope to connect and collaborate with you soon. </p>
-      </div>
-    </div>
-    
-    <!--Quotes-->
-
-    <section class="quotes gradient-custom rounded">
-      <div class="container py-5">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col col-xl-10">
-            <div class="card">
-              <div class="card-body">
-                <!-- Experimental Quotes Slideshow -->
-                
-                <div id="quotes-carousel" class="carousel slide" data-bs-ride="carousel">
-
-                  <!-- <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#quotes-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  </div> -->
+        <div id="reel-play-button">
+          <button onclick="playReel()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!--About-Me-->
+      <section id="about-me">
+        <div class="container-fluid">
+          <img id="brand" src="./assets/branding/Logo Tranparency.png">
+          <hr>
+          <div class="row equal-height-row d-flex flex-wrap" id="about-me-content"> 
+            <div class="col-lg-6 d-flex flex-wrap align-items-center" id="about-me-text"> 
+              <div>
+                <p class="text-start">With over 4 years of Film Production experience I provide cinematic solutions to shorts, 
+                  feature films, action sports, & documentaries of health & wellness journey’s. 
+                  Additionally, I am highly skilled in both traditional and modern photography. 
+                  Outdoor enthusiast, lactose intolerant diary lover, faith driven, and family oriented. 
+                  Hope to connect and collaborate with you soon.
+                </p>
+                <img class="signiture" src="./assets/images/MV-Signiture-Inverted.png">
+              </div> 
               
-                  <div class="carousel-inner">
-                    <figure class="text-center carousel-item active">
-                      <blockquote class="blockquote">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                        </svg>I ask a lot of our Media position for the event. Malcolm blew me away with the quality of work he was able to produce in the restricted environment he was given to work…</p>
+            </div>          
+            <div class="col-lg-6 d-flex flex-wrap align-items-end" id="about-me-portrait"> 
+              <div> 
+                <img class="img-fluid" src="./assets/images/portrait.jpg">
+              </div> 
+            </div> 
+          </div>
+          <hr>
+        </div> 
+      </section>
+      <!-- References -->
+      <section class="container" id="references">
+        <h1>Testimonies</h1>
+        <hr class="mainHR">
+
+        <div id="quotesCarousel" class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="container">
+              <!-- First Set Of Quotes -->
+              <div class="carousel-item active " data-bs-interval="5000">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          I ask a lot of our media position for the event. 
+                          Malcom blew me away with the quality of work he was able to 
+                          produce in the restricted environment he was given to work…
+                        </p>
                       </blockquote>
-                      <figcaption class="blockquote-footer">
-                        Ashley Schneider <cite title="Source Title">President & Founder, MSruntheUS, INC</cite>
-                      </figcaption>
-                    </figure>
-                    <figure class="text-center carousel-item">
-                      <blockquote class="blockquote">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                        </svg>Responsible, Enthusiastic, and incredibly hard working, Malcolm was among the best here at Camp Widji and I strongly endorse his qualifications and skillset</p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer">
-                        Jay Burnett <cite title="Source Title">Marketing Director, YMCA Camp Widjiwagan</cite>
-                      </figcaption>
-                    </figure>
-                    <figure class="text-center carousel-item">
-                      <blockquote class="blockquote">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                        </svg>As the camp photographer/videographer, he consistently went above and beyond, capturing and preserving unforgettable moments with creativity and precision. Aside from his remarkable work ethic, Malcolm has a cinematic eye that will turn the most mundane moments into art.</p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer">
-                        Aaron Grayson <cite title="Source Title">Creative Manager & Photographer</cite>
-                      </figcaption>
-                    </figure>
-                    <figure class="text-center carousel-item">
-                      <blockquote class="blockquote">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                        </svg>An invaluable asset to any creative team, seamlessly blends artistic vision with technical prowess…He masterfully navigates the world of videography and post-production, delivering stunning visual narratives that resonate.</p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer">
-                        Matt Walker <cite title="Source Title">Photographer, Exxel Outdoors</cite>
-                      </figcaption>
-                    </figure>
-                    <figure class="text-center carousel-item">
-                      <blockquote class="blockquote">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                        </svg>Malcom is very easy to work with, he always have a good attitude, a good smile, he is always on time and carries himself very professionaly! He is a dedicated volunteer at our church production team! I highly recommend working with him!</p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer">
-                        Bruno Cardoso <cite title="Source Title">Vintage City Church // Broadcast Lead</cite>
+                      <figcaption>
+                        &mdash; Ashley Schneider, <br><cite class="fw-bold" title="source title">President & Founder, MSruntheUS, INC</cite>
                       </figcaption>
                     </figure>
                   </div>
-
-                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#quotes-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#quotes-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button> -->
-
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          Responsible, Enthusiastic, and incredibly hard working, 
+                          Malcom was among the best here at Camp Widji and I strongly 
+                          endorse his qualifications and skillset...
+                        </p>
+                      </blockquote>
+                      <figcaption>
+                        &mdash; Jay Burnett, <br><cite class="fw-bold" title="source title">Marketing Director, YMCA Camp Widjiwagan</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          As the camp photographer & videographer, he consistently went 
+                          above and beyond, capturing and preserving unforgettable moments 
+                          with creativity and precision. Aside from his remarkable work ethic, 
+                          Malcom has a cinematic eye that will turn the most mundane moments into art.
+                        </p>
+                      </blockquote>
+                      <figcaption>
+                        &mdash; Aaron Grayson, <cite class="fw-bold" title="source title">Creative Manager & Photographer</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <!-- Second Set Of Quotes -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          An invaluable asset to any creative team, seamlessly blends artistic 
+                          vision with technical prowess…He masterfully navigates the world of videography 
+                          and post-production, delivering stunning visual narratives that resonate.
+                        </p>
+                      </blockquote>
+                      <figcaption>
+                        &mdash; Matt Walker, <cite class="fw-bold" title="source title">Photographer, Exxel Outdoors</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+        
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          Malcom is very easy to work with, he always have a good attitude, a good smile, 
+                          he is always on time and carries himself very professionally! He is a dedicated volunteer 
+                          at our church production team! I highly recommend working with him!
+                        </p>
+                      </blockquote>
+                      <figcaption>
+                        &mdash; Bruno Cardoso, <cite class="fw-bold" title="source title">Broadcast Lead, Vintage City Church</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+        
+                  <div class="col-lg-4">
+                    <span class="quote-icon" style='font-size:50px;'>&#x275E;</span>
+                    <figure class="quote">
+                      <br>
+                      <blockquote class="blockquote text-start">
+                        <p>
+                          His talent extended beyond the logistics of coordination to infusing creativity 
+                          into every project, Helping to elevate our content to new heights…
+                        </p>
+                      </blockquote>
+                      <figcaption>
+                        &mdash; Adam Weitzel, <cite class="fw-bold" title="source title">Creative Project Manager, Exxel Outdoors</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Previous Button -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">previous</span>
+          </button>
+          <!-- Next Button -->
+          <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">next</span>
+          </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Video-Showcase-->
-    <div class="container" id="video-showcase">
-      
-      <h2>Recent Work</h2>
+      <!--Video-Showcase-->
+      <section id="video-showcase">
+        <div class="container-fluid">
+          <h1>Recent Work</h1>
+          <hr class="mainHR">
+          <div class="row equal-height-row d-flex flex-wrap">
+            <div class="col-lg-4 d-flex  
+            flex-column  
+            justify-content-center">
+              <video poster="./assets/videos/recent-work/1-thumbnail.png" playsinline controls preload="auto" loop controlslist="nodownload" oncontextmenu="return false;">
+                <source src="./assets/videos/recent-work/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-4 d-flex  
+            flex-column  
+            justify-content-center">
+              <video poster="./assets/videos/recent-work/2-thumbnail.png" playsinline controls preload="auto" loop controlslist="nodownload" oncontextmenu="return false;">
+                <source src="./assets/videos/recent-work/2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-4 d-flex  
+            flex-column  
+            justify-content-center">
+              <video poster="./assets/videos/recent-work/3-thumbnail.png" playsinline controls preload="auto" loop controlslist="nodownload" oncontextmenu="return false;">
+                <source src="./assets/videos/recent-work/3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Collaboration Logos -->
+      <section class="container" id="collab-banner">
         <div class="row">
-          <div class="col-lg-4">
-            <video preload="auto">
-              <source  src="./assets/videos/placeholder.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+          <div class="col collab-logo">
+            <img src="./assets/collab-branding/Kelty.png">
           </div>
-          <div class="col-lg-4">
-            <video preload="auto">
-              <source src="./assets/videos/placeholder.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div class="col collab-logo">
+            <img src="./assets/collab-branding/PetenwellGroup.png">
           </div>
-          <div class="col-lg-4">
-            <video preload="auto">
-              <source src="./assets/videos/placeholder.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div class="col collab-logo">
+            <img src="./assets/collab-branding/SierraDesigns.png">
+          </div>
+          <div class="col collab-logo">
+            <img src="./assets/collab-branding/MSruntheUS.png">
+          </div>
+          <div class="col collab-logo">
+            <img src="./assets/collab-branding/UltimateDirection.png">
           </div>
         </div>
-    </div>
+      </section>
     </main>
-    
-      
     <!--Footer-->
-    <section id="footer">
-          
-    </section>
-
+    <footer class="d-flex justify-content-center">
+      <div class="col-md-4 ">
+        <a>
+          <img src="./assets/branding/Logo Tranparency.png" height="50px">
+        </a>
+        <hr>
+        <p>Copyright © 2023</p>
+      </div>
+    </footer>
+    <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
+    <!-- My Script(s) -->
+    <script>
+      var reel = document.getElementById('reel');
+      var timeCode = 0;
+
+      function playReel()
+      {
+        if (reel.requestFullscreen) {
+          reel.requestFullscreen();
+        } else if (reel.mozRequestFullScreen) { /* Firefox */
+          reel.mozRequestFullScreen();
+        } else if (reel.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+          reel.webkitRequestFullscreen();
+        } else if (reel.msRequestFullscreen) { /* IE/Edge */
+          reel = window.top.document.body; //To break out of frame in IE
+          reel.msRequestFullscreen();
+        } else if (!reel.webkitDisplayingFullscreen) { 
+          reel.webkitEnterFullscreen();
+        }
+
+        reel.muted = false;
+        reel.volume = 0.2;
+        reel.currentTime = timeCode;
+        
+      }
+
+      reel.addEventListener("fullscreenchange", function()
+      {
+        if (!document.fullscreenElement) 
+        {
+          reel.muted = true;
+          timeCode = reel.currentTime;
+        }
+      })
+    </script>
   </body>
 </html>
-
-<!-- WORK IN PROGRESS DARKMODE -->
-
-              <!-- <li class="nav-item dropdown">
-                <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
-                  <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                  <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                  <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                      Light
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                      Dark
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                      Auto
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                </ul>
-              </li> -->
-              <!-- WORK IN PROGRESS DARKMODE -->
-
-              <!-- <video muted playsinline="" preload="auto" autoplay="autoplay" loop="loop" aria-label="Hero Bumper V2 Bukwild Reel Main 16x9 2" class="vv-asset vv-video" style="object-fit: cover; object-position: 50% 50%; width: 100%;"><source src="./assets/videos/video-reel.mp4" type="video/mp4"></video> -->

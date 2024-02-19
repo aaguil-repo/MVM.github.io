@@ -1,0 +1,154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+main .container-fluid
+{
+    width: 90%;
+}
+
+.container-fluid .video-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-fluid .video-container .video
+{
+    height: 350px;
+    width: 550px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-fluid .video-container .video img
+{
+    width: 100%    !important;
+    height: 100%   !important;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container-fluid .video-container .video:hover img
+{
+    transform: scale(1.1);
+    filter: brightness(20%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.content
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+    color: #eee;
+    font-size: 2rem;
+}
+
+.content:hover
+{
+    opacity: 1;
+}
+
+.container-fluid .popup-video
+{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.container-fluid .popup-video video
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    object-fit: cover;
+}
+
+.container-fluid .popup-video span
+{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #eee;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1882px)
+{
+    .container-fluid .video-container .video
+    {
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1440px)
+{
+    main .container-fluid
+    {
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
+
+    .container-fluid .video-container .video
+    {
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:700px) 
+{
+    main
+    {
+        margin-top: 3em;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    .container-fluid .video-container .video
+    {
+        height: 250px;
+        width: 350px;
+    }
+}
+
+@media (max-width:768px)
+{
+    .container-fluid .popup-video-video video
+    {
+        width: 95%;
+    }
+    
+}

@@ -1,0 +1,311 @@
+/* Video Reel */
+#hero
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#hero video
+{
+  margin-top: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  z-index: 2;
+}
+
+#reel-play-button
+{
+  margin-top: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(6, 7, 7, 0.603);
+  z-index: 3;
+}
+
+#reel-play-button button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+#reel-play-button svg
+{
+  height: 5em;
+  width: auto;
+  color: white;
+}
+
+/* MVM spacer */
+#brand
+{
+  height:100px;
+  margin-bottom: 3rem;
+}
+
+/* About Me */
+#about-me
+{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.2em;
+}
+
+#about-me .container-fluid
+{
+  width: 70%;
+}
+
+#about-me hr
+{
+  border: 3px dotted black;
+  border-radius: 5px;
+}
+
+#about-me-text 
+{
+  padding: 2em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.750);
+  border-radius: 5px 0 0 5px;
+}
+
+.signiture
+{
+  height: auto;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-me-portrait
+{
+  padding: 0;
+  background-color: black;
+}
+
+#about-me-portrait img
+{
+  border-radius: 0 5px 5px 0;
+}
+
+#about-me-text hr
+{
+  border: 1px solid rgb(255, 255, 255);
+  width: 8rem;
+}
+
+/* References */
+
+#references
+{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.carousel-control-prev
+{
+  margin-left: -120px;
+}
+
+.carousel-control-next
+{
+  margin-right: -120px;
+}
+
+.carousel-inner
+{
+  background-color: #eee;
+  border-radius: 1em;
+}
+
+#quotesCarousel blockquote
+{
+  font-size: 1.2rem;
+}
+
+#quotesCarousel figcaption
+{
+  font-size: 1rem;
+}
+
+span.quote-icon
+{
+  float: right;
+}
+
+.carousel-item > .row
+{
+  padding: 15px;
+  height: 350px;
+}
+
+.quote 
+{
+  padding: 20px;
+}
+
+/* Recent Work */
+#video-showcase
+{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#video-showcase .container-fluid
+{
+  width: 70%;
+}
+
+#video-showcase .row
+{
+  background-color: rgba(0, 0, 0, 0.750);
+  border-radius: 5px;
+
+  padding: 2rem;
+}
+
+#video-showcase video
+{
+  width: 100%    !important;
+  height: 100%   !important;
+  object-fit: cover;
+}
+
+/* Collab Banner */
+#collab-banner
+{
+  margin-bottom: 50px;
+}
+
+.collab-logo img
+{
+  height: 100px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1888px)
+{
+  #about-me .container-fluid
+  {
+    width: 80%;
+  } 
+  #video-showcase .container-fluid
+  {
+    width: 80%;
+  }  
+}
+
+@media screen and (max-width: 1400px)
+{
+  .carousel-item > .row
+  {
+    height: 405px;
+  }
+
+  #about-me
+  {
+    font-size: 1.1em;
+  }
+
+  #about-me .container-fluid
+  {
+    width: 100%;
+  } 
+  #video-showcase .container-fluid
+  {
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width: 1024px)
+{
+  .carousel-item > .row{
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px)
+{
+  #about-me-text 
+  {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #about-me-portrait img
+  {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .carousel-item > .row{
+    height: 800px;
+  }
+
+  .carousel-control-prev
+  {
+    margin-left: -70px;
+  }
+
+  .carousel-control-next
+  {
+    margin-right: -70px;
+  }
+
+  #video-showcase video
+  {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 576px)
+{
+  .carousel-item > .row{
+    height: 850px;
+  }
+
+  .carousel-control-prev
+  {
+    margin-left: -25px;
+  }
+
+  .carousel-control-next
+  {
+    margin-right: -25px;
+  }
+
+  #video-showcase video
+  {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 430px)
+{
+  .carousel-item > .row
+  {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 412px)
+{
+  .carousel-item > .row
+  {
+    height: 1100px;
+  }
+}
