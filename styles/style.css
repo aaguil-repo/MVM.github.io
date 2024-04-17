@@ -3,14 +3,40 @@ body
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background-color: #eee;
   background-image: url(/assets/images/criss-cross.webp);
   font: 1.2rem/1.4 Georgia, serif;
-  background-color: #eee;
 }
 
 nav
 {
   background-color: #eee;
+}
+
+.navbar-toggler
+{
+  border: none;
+}
+
+.active
+{
+  font-weight: 500;
+}
+
+.nav-item:hover
+{
+  text-decoration: underline 1px #525252;
+  text-underline-offset: 8px;
+}
+
+.social-icons
+{
+  transform: scale(1.3);
+}
+
+.social-icons:hover
+{
+  transform: scale(1.5);
 }
 
 h1
